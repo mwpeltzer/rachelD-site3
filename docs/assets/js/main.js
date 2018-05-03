@@ -27,6 +27,8 @@ $(function() {
 			xsmall:	'(max-width: 480px)'
 		});
 
+		console.log("skel", skel)
+
 	// Disable animations/transitions until everything's loaded.
 		$body.addClass('is-loading');
 
@@ -166,6 +168,8 @@ $(function() {
 							attachment: $this.css('background-attachment')
 						},
 						x;
+						// console.log("position", position)
+						// console.log('bg', bg)
 
 					// Set index.
 						$this
@@ -222,10 +226,14 @@ $(function() {
 								||	$window.prop('orientation') == 0 || $window.prop('orientation') == 180
 								||	$window.width() < $window.height()) {
 
-									if (position)
+									if (position){
 										$this.css('background-position', (bg.position ? bg.position + ',' : '') + position);
-									else
+										console.log("if position", position)
+										console.log("bg.position", bg.position)
+										console.log("$this.css('background-position', (bg.position ? bg.position + ',' : '') + position);", $this.css('background-position', (bg.position ? bg.position + ',' : '') + position))
+									}else{
 										$this.css('background-position', (bg.position ? bg.position + ',' : '') + '0% 50%');
+									}
 
 								}
 								else {
