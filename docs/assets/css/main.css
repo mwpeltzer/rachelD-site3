@@ -1334,6 +1334,10 @@
 				top: -85px;
 			}
 
+			#main .slide > .inner.about-page-text {
+				top: 0;
+			}
+
 
 
 				#main .slide > .inner > .content {
@@ -1795,6 +1799,7 @@
 
 		}
 
+}
 	
 
 
