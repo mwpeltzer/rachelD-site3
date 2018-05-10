@@ -1,11 +1,3 @@
 # Redirect domain aliases to primary domain
-https://racheldellefield.com/* https://www.racheldyoga.com/:splat 301!
-https://racheldellefieldyoga.com/* https://www.racheldyoga.com/:splat 301!
+https://racheldellefield.com/ https://www.racheldyoga.com/
 
-# These extra rules are required because HTTPS is not forced
-http://racheldellefield.com/* https://www.racheldyoga.com/:splat 301!
-http://racheldellefieldyoga.com/* https://www.racheldyoga.com/:splat 301!
-
-# Optional: Redirect default Netlify subdomain to primary domain
-https://racheldyoga.netlify.com/* https://www.racheldyoga.com/:splat 301!
-http://racheldyoga.netlify.com/* https://www.racheldyoga.com/:splat 301!
