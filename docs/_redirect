@@ -1,3 +1,7 @@
 # Redirect domain aliases to primary domain
-https://racheldellefield.com/https://www.racheldyoga.com/
+https://racheldellefield.com/* https://www.racheldyoga.com/:splat 301!
+https://racheldellefieldyoga.com/* https://www.racheldyoga.com/:splat 301!
 
+# These extra rules are required because HTTPS is not forced
+http://racheldellefield.com/* https://www.racheldyoga.com/:splat 301!
+http://racheldellefieldyoga.com/* https://www.racheldyoga.com/:splat 301!
